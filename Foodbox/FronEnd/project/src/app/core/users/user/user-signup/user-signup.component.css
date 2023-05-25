@@ -1,0 +1,12 @@
+.buttongroup{
+    padding:2px;
+    margin-bottom: 20px;
+}
+
+.form{
+    margin-bottom: 10%;
+}
+
+.ng-touched .ng-invalid {
+    border: 1px solid red;
+}
