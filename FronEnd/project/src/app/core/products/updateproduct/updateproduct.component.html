@@ -1,0 +1,43 @@
+<div class="container">
+    <p class="h4">Update Product</p>
+    <form [formGroup]="updateprod" (ngSubmit)="updateProduct()">
+        <div class="form-group">
+            <!-- <div class="form-control">
+                <label for="pid">pid</label>
+                <input type="number" class="form-control" formControlName="pid"  value="{{pid}}" [disabled]=true>
+            </div> -->
+
+            <div class="form-control">
+                <label for="pname">pname</label>
+                <input type="text" class="form-control" formControlName="pname" value="{{prname}}">
+            </div>
+
+            <div class="form-control">
+                <label for="price">price</label>
+                <input type="number" class="form-control" formControlName="price" value="{{pprice}}">
+            </div>
+
+            <div class="form-control">
+                <label for="descr">descr</label>
+                <input type="text" class="form-control" formControlName="descr" value="{{pdescr}}">
+            </div>
+
+            <div class="form-control">
+                <label for="imgurl">imgurl</label>
+                <input type="url" class="form-control" formControlName="imgurl" value="{{pimgurl}}">
+            </div>
+
+            <div class="form-control">
+                <label for="enabled">enabled</label>
+                <input type="checkbox" data-toggle="toggle" formControlName="enabled" value="{{penabled}}">
+            </div>
+
+           
+
+            <button class="btn btn-success" type="submit">Update Product</button>
+            <button class="btn btn-success" type="reset">Reset</button>
+            
+        </div>
+    </form>
+</div>
+

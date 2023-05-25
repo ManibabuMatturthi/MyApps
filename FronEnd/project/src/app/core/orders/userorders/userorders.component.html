@@ -1,0 +1,25 @@
+<div class="container">
+    <p class="h4">user Orders</p>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Order ID</th>
+                <th>OrderDate</th>
+                <th>OrderValue</th>
+                <th>OrderConfirmed</th>
+                <th>PaymentId</th>
+                <th>orderdetails</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let order of orders">
+                <th>{{order.oid}}</th>
+                <th>{{order.orderDate|date}}</th>
+                <th>{{order.orderValue | currency}}</th>
+                <th>{{order.orderconfirmed}}</th>
+                <th>{{order.paymentId}}</th>
+                <th><a routerLink="/user/orderdetails/{{order.oid}}">Get Order details</a></th>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,26 @@
+
+<div class="container">
+    <p class="h3">Users List</p>
+    <table class="table stripped">
+        <thead class="table-head">
+        <tr >
+            <th>User ID</th>
+            <th>User name</th>
+            <th>User Mobile</th>
+            <th>User city</th>
+            <th>Update User</th>
+            <th>Remove User</th>
+        </tr>
+    </thead>
+    <tbody class="table-body">
+        <tr *ngFor="let user of users">
+            <td>{{user.uid}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.mob}}</td>
+            <td>{{user.city}}</td>
+            <td><button class="btn btn-warning" (click)="updateUser(user.uid)">update</button></td>
+            <td><button class="btn btn-danger" (click)="removeUser(user.uid)">remove</button></td> 
+        </tr>
+    </tbody>
+</table>
+</div>
